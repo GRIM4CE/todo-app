@@ -1,0 +1,26 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "main": "app/app.js",
+  "license": "MIT",
+  "scripts": {
+    "css": "postcss -u autoprefixer -o public/styles.css public/styles.css",
+    "sass": "node-sass src/sass/styles.scss public/styles.css && npm run css",
+    "sass:w": "nodemon -e scss -w src/** -x \"npm run sass\"",
+    "start": "concurrently \"nodemon -e 'js, hbs'\" \"npm run sass:w\""
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.2",
+    "express": "^4.14.1",
+    "hbs": "^4.0.1",
+    "node-sass": "^4.5.0",
+    "postcss-cli": "^2.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "rewire": "^2.5.2",
+    "supertest": "^3.0.0"
+  }
+}

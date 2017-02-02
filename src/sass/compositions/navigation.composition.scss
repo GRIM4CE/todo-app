@@ -1,0 +1,10 @@
+.main-nav {
+  display: flex;
+  padding: $gutter;
+  background-color: $blue-700;
+  color: $white;
+
+  ul {
+    margin-left: auto;
+  }
+}

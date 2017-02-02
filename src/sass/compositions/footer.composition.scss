@@ -1,0 +1,12 @@
+footer {
+  flex: 1 100%;
+  text-align: center;
+
+  a {
+    color: $blue-300;
+
+    &:hover {
+      color: $blue-500;
+    }
+  }
+}

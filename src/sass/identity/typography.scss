@@ -1,0 +1,18 @@
+$heading-font: 'Raleway', sans-serif;
+$base-font: 'Open Sans', sans-serif;
+
+%heading-font {
+  font-family: $base-font;
+  font-weight: 500;
+}
+
+%base-font-light-italic {
+  font-family: $base-font;
+  font-style: italic;
+  font-weight: 300;
+}
+
+%base-font-heavy {
+  font-family: $base-font;
+  font-weight: 700;
+}
